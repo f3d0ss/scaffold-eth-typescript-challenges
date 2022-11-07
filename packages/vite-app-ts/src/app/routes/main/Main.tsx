@@ -152,6 +152,12 @@ export const Main: FC = () => {
               mainnetProvider={scaffoldAppProviders.mainnetProvider}
               startBlock={1}
             />
+            <EventsUI
+              contract={readContracts["Balloons"]}
+              eventName="Approval"
+              mainnetProvider={scaffoldAppProviders.mainnetProvider}
+              startBlock={1}
+            />
           </Route>
           <Route exact path="/debug">
             <MainPageContracts
